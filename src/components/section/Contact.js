@@ -56,10 +56,10 @@ const Contact = () => {
                     </form>
                 </div>
                 <div className="col-12 col-sm-6 half">
-                <div className="d-flex justify-content-center align-items-center flex-column">
                     <p className="lead">
                         If you are a recruiter, you may need my resume ;)       
                     </p>
+                <div className="d-flex justify-content-center align-items-center flex-column">
                     {social.resume && <a title="Download Resume" href={social.resume} download><i className="fas fa-download"></i></a>}
                     <p className="lead">
                         {contact.pitch}        
