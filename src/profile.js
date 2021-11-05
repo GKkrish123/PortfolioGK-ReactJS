@@ -87,42 +87,42 @@ const projects = [
     id: "project1",
     name: "Project 1",
     skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #project2
     id: "project2",
     name: "Project 2",
     skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #project3
     id: "project3",
     name: "Project 3",
     skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #project4
     id: "project4",
     name: "Project 4",
     skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #project5
     id: "project5",
     name: "Project 5",
     skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #project6
     id: "project6",
     name: "Project 6",
     skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
 ];
 // Edit your Miscellaneous Activities, its name and the url.
@@ -134,30 +134,31 @@ const miscellaneous = [
     // Add image in './styles/images.css' in #misc1
     id: "misc1",
     name: "Miscellaneous 1",
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #misc2
     id: "misc2",
     name: "Miscellaneous 2",
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #misc3
     id: "misc3",
     name: "Miscellaneous 3",
-    url: "https://github.com/kaustubhai",
+    url: "https://github.com/gkkrish123",
   },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
 // If you hacve the link already, paste it in the contactUrl below
 const section5Title = "Get in Touch";
+const formSheet = "https://v1.nocodeapi.com/gkkrish/google_sheets/mxNzVdMCfFFcVYMX?tabId=Sheet1";
 const contact = {
   pitch:
-    "Whether you want to get in touch, talk about a project, or just say hi, I would love to hear from you. Simply fill the form and send me an email.",
+    "Whether you want to get in touch, talk about a project, or just say hi, I would love to hear from you. You can submit the form or reach out through the below platforms :)",
   copyright: "Gokulakrishnan A",
-  contactUrl: "www.krishnan.arulsigamani@gmail.com",
+  contactUrl: "",
 };
 // Paste your respective social media links. You can omit any if you dont have it
 // Upload your resume in your drive, get the shaareable link and paste it in the resume section
@@ -184,4 +185,5 @@ export {
   section3Title,
   section4Title,
   section5Title,
+  formSheet,
 };
