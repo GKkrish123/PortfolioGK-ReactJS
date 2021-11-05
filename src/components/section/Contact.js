@@ -5,11 +5,10 @@ const Contact = () => {
     const [formData, setformData] = useState({
         name: "",
         email: "",
-        subject: "",
         message: ""
     });
 
-    const {name, email, subject, message} = formData;
+    const {name, email, message} = formData;
 
     const handleChange=(e)=>{
         setformData({...formData, [e.target.name]: e.target.value})
@@ -24,12 +23,12 @@ const Contact = () => {
                     headers: {
                         "Content-Type": "application/json"
                     },
-                    body: JSON.stringify([[name, email, subject, message, new Date().toLocaleString()]])
+                    body: JSON.stringify([[name, email, message, new Date().toLocaleString()]])
                 }
             )
             await response.json()
             alert("Hey "+name+ ", your form got submitted. Thanks for reaching out.")
-            setformData({...formData, name: "",email: "",subject: "",message: ""})
+            setformData({...formData, name: "",email: "",message: ""})
         } catch (error) {
             console.log(error);
             alert("Hey "+name+", there is an error in submitting the form. Please reach out through other media. Thanks")
@@ -50,7 +49,6 @@ const Contact = () => {
                     <form onSubmit={submitForm}>
                         <input type="text" id="fname" name="name" placeholder="Your name" value={name} required onChange={handleChange}></input>
                         <input type="mail" id="mailid" name="email" placeholder="Email Address" value={email} required onChange={handleChange}></input>
-                        <input type="text" id="sub" name="subject" placeholder="Subject" value={subject} required onChange={handleChange}></input>
                         <textarea id="msg" name="message" placeholder="Message" value={message} required onChange={handleChange}></textarea>
                         <button style={{cursor: 'pointer'}} type="submit">Send Message</button>
                     </form>
