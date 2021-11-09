@@ -1,6 +1,6 @@
 import React from 'react'
 import Project from '../layouts/Project'
-import { projects, miscellaneous, section3Title, section4Title } from '../../profile'
+import { projects, miscellaneous, section3Title, section4Title, social } from '../../profile'
 
 const Works = () => {
     return (
@@ -29,6 +29,12 @@ const Works = () => {
                     <Project key={x.id} id={x.id} url={x.url} name={x.name} />
                     )}
                 </div>
+            </div>
+            <div className="pp-head-line mx-auto text-center">
+                <h4 className="red-line pp-head">
+                            If you are a recruiter, you may need my resume ;)       
+                </h4>
+                {social.resume && <a title="Download Resume" href={social.resume} download><i className="fas fa-download"></i></a>}
             </div>
         </>
     )
