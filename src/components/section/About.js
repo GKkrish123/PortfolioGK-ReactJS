@@ -1,12 +1,15 @@
 import React from 'react'
 import Skills from '../layouts/Skills'
 import { about, skillsBar, section2title } from '../../profile'
+import image from '../../image.jpg'
 
 const About = () => {
     return (
         <div id="about" className="effect2">
             <div data-aos="zoom-in-up" data-aos-once="true" className="row">
-            <div className="col-12 d-none d-md-block offset-md-1 col-md-4 Photo" id="not-dark2"></div>
+            <div className="col-12 d-none d-md-block offset-md-1 col-md-4" id="not-dark2">
+                <img alt="profile" src={image} style={{width: "300px", height: "420px", border: "10px double"}}/>
+            </div>
             <div className="col-12 offset-md-1 col-md-6 about">
                 <div className="About-title-box">
                 <h1 id="About" className="red-line">{section2title}</h1>

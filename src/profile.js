@@ -75,23 +75,23 @@ const projects = [
   {
     // Add image in './styles/images.css' in #project1
     id: "project1",
-    name: "Project 1",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/gkkrish123",
+    name: "BEAK - iLink product",
+    skills: ["FastAPI, ReactJS, Flask, Docker, Elasticsearch, Azure"],
+    // url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #project2
     id: "project2",
-    name: "Project 2",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/gkkrish123",
+    name: "Car sales web app",
+    skills: ["ReactJS, Redux"],
+    // url: "https://github.com/gkkrish123",
   },
   {
     // Add image in './styles/images.css' in #project3
     id: "project3",
-    name: "Project 3",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/gkkrish123",
+    name: "Portfolio",
+    skills: ["ReactJS, Google sheets API, TS Particles"],
+    // url: "https://github.com/gkkrish123",
   },
 ];
 // Edit your Miscellaneous Activities, its name and the url.
