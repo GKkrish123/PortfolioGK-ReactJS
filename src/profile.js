@@ -135,7 +135,7 @@ const social = {
   github: "https://github.com/gkkrish123",
   instagram: "https://www.instagram.com/gkkrish_16/",
   linkedin: "https://linkedin.com/in/gokulakrishnan-a-2b09641b0",
-  resume: "https://drive.google.com/file/d/1EK0P-oyBV4pn9zYMjnfQN-gVWLT4w8Ez/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1E_NC_wQjmXxTUFEq-9k6hufzTgvAqwUp/view?usp=sharing",
 };
 // Dont change anything here
 export {
