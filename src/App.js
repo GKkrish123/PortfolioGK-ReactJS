@@ -11,9 +11,20 @@ import cornfieldChase from "./cornfieldChase.mp3";
 
 function App() {
   const [audio] = useState(new Audio(cornfieldChase));
+  const [MusicStartTrigger, setMusicStartTrigger] = useState("");
   const [playing, setPlaying] = useState(false);
 
   const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    audio.addEventListener('ended', () => audio.play());
+  }, [audio]);
+
+  useEffect(() => {
+    MusicStartTrigger && setPlaying(true);
+  },
+  [MusicStartTrigger]
+);
 
   useEffect(() => {
       playing ? audio.play() : audio.pause();
@@ -21,9 +32,6 @@ function App() {
     [playing, audio]
   );
 
-  useEffect(() => {
-    audio.addEventListener('ended', () => audio.play());
-  }, [audio]);
 
   useEffect(() => {
     AOS.init({
@@ -35,7 +43,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" onMouseMove={() => setMusicStartTrigger("Start")}>
       <button className='audio-button' onClick={toggle}>
           <i className={`${playing ? "fas fa-pause" : "fas fa-play"}`} />
       </button>

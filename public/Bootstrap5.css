@@ -8913,3 +8913,25 @@ button.close {
     display: inline-flex !important;
   }
 }
+@media (max-width: 992px) {
+ .image-div {
+  width: 100%;
+  margin: auto;
+  display: flex !important;
+  justify-content: center;
+ }
+ .about-div {
+  width: 100%;
+  display: contents;
+  text-align: center;
+  justify-content: center;
+ }
+ .About-title-box {
+  margin-top: 2rem;
+  width: 100% !important;
+ }
+ .about-text {
+  width: 100% !important;
+  padding: 2%;
+}
+}
