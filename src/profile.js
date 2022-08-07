@@ -13,14 +13,14 @@ const header = {
 };
 const background = {
   // Options: Snow or Particle
-  type: "Snow",
+  type: "Particle",
 };
 // Write a para about yourself here
 // To update your image, go to './styles/images.css'
 const section2title = "About Me";
 const about = {
   paragraph:
-  "A young software engineer who has an extensive experience in the design, analysis and testing of a web application, an enhanced understanding of the architecture and frameworks and an adulthood of writing easily maintainable and understandable code.",
+  "A thriving software engineer who has an extensive experience in the design, analysis and testing of a web application, an enhanced understanding of the architecture and frameworks and an adulthood of writing easily maintainable and understandable code.",
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma

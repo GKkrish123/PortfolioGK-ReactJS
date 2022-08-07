@@ -1,7 +1,7 @@
 import React from 'react'
 import Skills from '../layouts/Skills'
 import { about, skillsBar, section2title } from '../../profile'
-import image from '../../image.jpg'
+import image from '../../image.jpeg'
 
 const About = () => {
     return (

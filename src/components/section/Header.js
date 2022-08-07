@@ -30,7 +30,8 @@ const Header = () => {
     return (
         <div>
             <div className="Header">
-                <h1>{ `I'm ${header.name}` }</h1><br/>
+                <h1>HOLA !</h1>
+                <h2>{ `I'm ${header.name}` }</h2><br/>
             <p className="line-1 anim-typewriter">FULL STACK DEVELOPER</p>
             <label className="switch">
                 <input id="mode-switch" onClick={e => toggleDarkMode(e)} type="checkbox"/>
