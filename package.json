@@ -7,9 +7,9 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
     "aos": "^2.3.4",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
-    "react-particles-js": "3.6.0",
+    "react": "^16.0.1",
+    "react-dom": "^16.0.1",
+    "react-particles-js": "^3.4.1",
     "react-scripts": "4.0.1",
     "tsparticles": "1.33.2",
     "web-vitals": "^0.2.4"

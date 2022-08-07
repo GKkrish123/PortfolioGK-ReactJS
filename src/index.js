@@ -6,8 +6,6 @@ import './styles/images.css'
 import './styles/no-touch.min.css'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
