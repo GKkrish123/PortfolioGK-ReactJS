@@ -18,12 +18,12 @@ function App() {
   useEffect(() => {
       playing ? audio.play() : audio.pause();
     },
-    [playing]
+    [playing, audio]
   );
 
   useEffect(() => {
     audio.addEventListener('ended', () => audio.play());
-  }, []);
+  }, [audio]);
 
   useEffect(() => {
     AOS.init({
