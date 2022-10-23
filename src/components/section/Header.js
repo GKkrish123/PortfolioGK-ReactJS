@@ -5,11 +5,7 @@ import { header } from '../../profile'
 const Header = () => {
 
     const scrollTo = () => {
-        window.scrollTo({
-            top: 100000,
-            left: 0,
-            behavior: "smooth"
-        })
+        document.getElementById("ContactMe").scrollIntoView({ behavior: "smooth" });
     }
 
     const toggleDarkMode = (e) =>  {
