@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { animation } from "./profile";
 import cornfieldChase from "./cornfieldChase.mp3";
+import myVideo from "./dopeEdit.mp4";
 
 function App() {
   const [audio] = useState(new Audio(cornfieldChase));
@@ -47,8 +48,11 @@ function App() {
       <button className='audio-button' onClick={toggle}>
           <i className={`${playing ? "fas fa-pause" : "fas fa-play"}`} />
       </button>
+      <video className="Video" autoPlay loop muted>
+        <source src={myVideo} type="video/mp4" />
+      </video>
       <Header />
-      <Particles />
+      {/* <Particles /> */}
       <About />
       <Works />
       <Contact />
