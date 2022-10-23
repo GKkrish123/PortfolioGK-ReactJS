@@ -12,13 +12,13 @@ const ParticlesBackground = () => {
           params={{
             particles: {
               number: {
-                value: 75,
+                value: 15,
                 density: {
                   enable: false,
                 },
               },
               color: {
-                value: "#000000",
+                value: "#FFFFFF",
               },
               size: {
                 value: 10,
@@ -58,19 +58,19 @@ const ParticlesBackground = () => {
                 enable: true,
               },
               number: {
-                value: 75,
+                value: 15,
                 density: {
                   enable: false,
                 },
               },
-              color: "#000",
+              color: "#000000",
               size: {
                 value: 5,
                 random: true,
               },
               line_linked: {
                 enable: true,
-                color: "#000",
+                color: "#000000",
               },
               move: {
                 random: true,

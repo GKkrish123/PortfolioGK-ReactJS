@@ -183,14 +183,15 @@ button:focus {
 .project-card {
   padding: 15px;
   margin-top: 15px;
-  background-color: #FFF;
   box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
   border: 0.5px solid #eee;
 }
 .project-card h2 {
   color: var(--primary-color);
   margin-top: 10px;
-  margin-left: 3%;
+  background-color: rgba(255,255,255,0.7);
+  border: 2px solid #000;
+  padding: 3%;
   font-weight: 500;
 }
 .project-card h2:hover {
@@ -200,7 +201,9 @@ button:focus {
 .project-card h3 {
   text-align: left;
   font-size: 1rem;
-  margin-left: 3%;
+  background-color: rgba(255,255,255,0.7);
+  border: 2px solid #000;
+  padding: 3%;
 }
 .image-project {
   height: 300px;
@@ -524,7 +527,7 @@ input:checked + .slider:before {
   }
   .line-1 {
     font-size: 80%;
-    top: 5.5%;
+    top: 0%;
   }
   .underline {
     text-decoration-color: (0, 0, 0, 0.1);
