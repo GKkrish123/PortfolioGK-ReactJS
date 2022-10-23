@@ -29,6 +29,7 @@ button:focus {
 }
 .Header h1 {
   z-index: 1;
+  color: #000;
   text-shadow: 2px 2px white;
 }
 .Header h2 {
@@ -39,6 +40,7 @@ button:focus {
   position: absolute;
 }
 .Header p {
+  color: #000;
   margin-top: 125px;
   text-shadow: 2px 2px white;
 }
@@ -530,7 +532,7 @@ input:checked + .slider:before {
     font-size: 1.5rem;
   }
   .line-1 {
-    font-size: 80%;
+    font-size: 90%;
     top: 0%;
   }
   .underline {
