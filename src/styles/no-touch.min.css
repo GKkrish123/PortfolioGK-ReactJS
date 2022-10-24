@@ -175,6 +175,10 @@ button:focus {
 .skill__square svg:hover {
   color: #ff4753 !important;
 }
+.error-text {
+  color: red;
+  font-weight: 500;
+}
 .third {
   width: 75%;
   margin: 10% auto;
