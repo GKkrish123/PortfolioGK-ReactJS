@@ -1,15 +1,19 @@
 import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import { background } from "../../profile";
+import { loadFull } from "tsparticles";
 
 const ParticlesBackground = () => {
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
+
   return (
     <div className="particle">
       {background.type === "Snow" && (
         <Particles
-          height="100vh"
-          width="100%"
-          params={{
+          init={particlesInit}
+          options={{
             particles: {
               number: {
                 value: 15,
@@ -50,9 +54,9 @@ const ParticlesBackground = () => {
       )}
       {background.type === "Particle" && (
         <Particles
-          height="100vh"
-          width="100%"
-          params={{
+          init={particlesInit}
+          options={{
+            fpsLimit: 60,
             particles: {
               collisions: {
                 enable: true,
@@ -73,10 +77,13 @@ const ParticlesBackground = () => {
                 color: "#000000",
               },
               move: {
-                random: true,
+                bounce: false,
+                direction: 'none',
+                enable: true,
+                outMode: 'bounce',
+                random: false,
                 speed: 1,
-                direction: "bottom",
-                out_mode: "out",
+                straight: false,
               },
             },
             interactivity: {
@@ -97,7 +104,7 @@ const ParticlesBackground = () => {
                   particles_nb: 5,
                 },
               },
-              retina_detect: true,
+              detectRetina: true,
             },
           }}
         />
