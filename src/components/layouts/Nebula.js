@@ -1,4 +1,5 @@
 import { ReactNebula } from "@flodlc/nebula";
+import { memo } from "react";
 
 const Nebula = ({ isDarkMode }) => {
   return (
@@ -34,4 +35,4 @@ const Nebula = ({ isDarkMode }) => {
   );
 };
 
-export default Nebula;
+export default memo(Nebula);
