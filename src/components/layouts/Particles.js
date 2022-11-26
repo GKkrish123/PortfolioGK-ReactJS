@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Particles from "react-tsparticles";
 import { background } from "../../profile";
 import { loadFull } from "tsparticles";
@@ -113,4 +113,4 @@ const ParticlesBackground = () => {
   );
 };
 
-export default ParticlesBackground;
+export default memo(ParticlesBackground);
