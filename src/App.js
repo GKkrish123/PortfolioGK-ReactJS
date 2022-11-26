@@ -118,7 +118,7 @@ const App = () => {
       {showVideoButton && (
         <button className="video-button" onClick={toggleVideo}>
           <i
-            className={`${videoPlaying ? "fa fa-video-slash" : "fa fa-video"}`}
+            className={`${videoPlaying ? "fa fa-video" : "fa fa-video-slash"}`}
           />
         </button>
       )}
