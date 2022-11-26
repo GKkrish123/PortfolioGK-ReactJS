@@ -73,6 +73,9 @@ button:focus {
 .dark-mode video {
   filter: invert(1);
 }
+.dark-mode .kawaii {
+  filter: drop-shadow(1px 2px 7px white) invert(1) saturate(4.5);
+}
 .dark-mode .nebula {
   filter: invert(1) hue-rotate(180deg);
   -webkit-filter: invert(1) hue-rotate(180deg);
@@ -296,9 +299,43 @@ button:focus {
   text-align: center;
 }
 .kawaii {
+  filter: drop-shadow(1px 2px 7px);
   margin-left: auto;
   margin-right: 30px;
   margin-top: 20px;
+}
+.eye-ball-left {
+  position: absolute;
+  top: 28px;
+  left: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  border-radius: 50%;
+  background-color: papayawhip;
+  height: 25px;
+  border: 1px solid black;
+}
+.eye-ball-right {
+  position: absolute;
+  top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 37px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: papayawhip;
+  height: 25px;
+  border: 1px solid black;
+}
+.eye-pupil {
+  width: 6px;
+  background-color: black;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 .contact-header {
   display: flex;

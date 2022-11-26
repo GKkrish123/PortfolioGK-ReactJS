@@ -5,6 +5,8 @@ import Kawaii from "../layouts/Kawaii";
 
 const Contact = () => {
   const [invalidEmail, setInvalidEmail] = useState(false);
+  const [focusedInput, setFocusedInput] = useState("");
+  const [kawaiiEmotion, setKawaiiEmotion] = useState("excited");
 
   const [formData, setformData] = useState({
     name: "",
@@ -29,6 +31,8 @@ const Contact = () => {
           alert(
             "Message Sent, Thanks for your attention. I have something for you ;)."
           );
+          setKawaiiEmotion("lovestruck");
+          setTimeout(() => setKawaiiEmotion("excited"), 4000);
           window.emojisplosion({
             emojiCount: 25,
             position() {
@@ -88,7 +92,7 @@ const Contact = () => {
     <div id="ContactMe" className="parallax">
       <div data-aos="zoom-in-up" data-aos-once="true" className="git-form">
         <div className="contact-header">
-          <Kawaii />
+          <Kawaii mood={kawaiiEmotion} focusedInput={focusedInput} />
           <div className="git-head-div text-center mx-auto">
             <h1 id="Contact" className="git-head">
               {section5Title}
@@ -104,6 +108,10 @@ const Contact = () => {
                   id="fname"
                   name="name"
                   placeholder="Your name"
+                  onFocus={() => setFocusedInput("#fname")}
+                  onBlur={() =>
+                    focusedInput === "#fname" && setFocusedInput("")
+                  }
                   value={name}
                   required
                   onChange={handleChange}
@@ -112,6 +120,10 @@ const Contact = () => {
                   type="mail"
                   id="mailid"
                   name="email"
+                  onFocus={() => setFocusedInput("#mailid")}
+                  onBlur={() =>
+                    focusedInput === "#mailid" && setFocusedInput("")
+                  }
                   placeholder="Email Address"
                   value={email}
                   required
@@ -127,6 +139,8 @@ const Contact = () => {
                   name="message"
                   placeholder="Message"
                   value={message}
+                  onFocus={() => setFocusedInput("#msg")}
+                  onBlur={() => focusedInput === "#msg" && setFocusedInput("")}
                   required
                   onChange={handleChange}
                 ></textarea>
