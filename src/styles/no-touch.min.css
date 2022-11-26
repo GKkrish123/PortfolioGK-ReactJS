@@ -34,14 +34,15 @@ button:focus {
 }
 .Header h2 {
   color: #000;
+  z-index: 1;
   text-align: center;
   text-shadow: 2px 2px white;
   font-size: 3.5rem;
-  position: absolute;
+  /* position: absolute; */
 }
-.Header p {
+.Header h3 {
   color: #000;
-  margin-top: 125px;
+  /* margin-top: 125px; */
   text-shadow: 2px 2px white;
 }
 .particle {
@@ -69,8 +70,13 @@ button:focus {
   -webkit-filter: invert(1) hue-rotate(180deg);
   -moz-filter: invert(1) hue-rotate(180deg);
 }
-.dark-mode video{
+.dark-mode video {
   filter: invert(1);
+}
+.dark-mode .nebula {
+  filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  -moz-filter: invert(1) hue-rotate(180deg);
 }
 .inverse-dark {
   filter: invert(1) hue-rotate(180deg);
@@ -122,6 +128,14 @@ button:focus {
 .Photo.inverse-dark {
   background-color: #000;
 }
+.nebula {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .Video {
   object-fit: cover;
   width: 100vw;
@@ -131,7 +145,7 @@ button:focus {
   left: 0;
 }
 .Video.inverse-dark {
-  background-color: #FFF;
+  background-color: #fff;
 }
 .about-text {
   width: 80%;
@@ -151,7 +165,7 @@ button:focus {
 .skill__square {
   display: inline;
   margin: 15px 0 !important;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .skill__square i {
   font-size: 50px !important;
@@ -195,9 +209,9 @@ button:focus {
 .project-card h2 {
   color: var(--primary-color);
   margin-top: 10px;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border: 2px solid #fff;
-  font-family: 'Anonymous Pro';
+  font-family: "Anonymous Pro";
   text-transform: uppercase;
   padding: 3%;
   font-weight: 500;
@@ -209,8 +223,8 @@ button:focus {
 .project-card h3 {
   text-align: left;
   font-size: 1rem;
-  font-family: 'Anonymous Pro';
-  background-color: rgba(255,255,255,0.7);
+  font-family: "Anonymous Pro";
+  background-color: rgba(255, 255, 255, 0.7);
   border: 2px solid #fff;
   padding: 3%;
 }
@@ -239,11 +253,16 @@ button:focus {
   text-align: center;
 }
 .pp-head-line {
+  text-shadow: 1px -1px #383d41;
+  position: relative;
   box-sizing: border-box;
   width: 30%;
   padding-bottom: 5px;
   border-bottom: solid 2px var(--primary-color);
   margin-bottom: 15px;
+}
+.pp-head-line .fa-download {
+  font-size: x-large;
 }
 .pp-text {
   font-size: 1.5rem;
@@ -264,7 +283,6 @@ button:focus {
   display: block;
   margin: 3rem 3rem 0 3rem;
   background-color: #fff;
-  max-height: 80vh;
 }
 .git-head-div {
   box-sizing: border-box;
@@ -389,12 +407,13 @@ textarea:focus {
 }
 .see {
   background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
   color: #fff;
   border: #000;
   outline: #000;
   margin-top: 2rem;
   padding: 5px 15px;
-  padding-bottom: 7px;
   border-radius: 3px;
 }
 .fa-eye {
@@ -412,28 +431,38 @@ textarea:focus {
   background-color: var(--hover-color);
 }
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  left: 44.5%;
-  bottom: 46%;
+  position: absolute !important;
+  right: 3%;
+  top: 3%;
+  float: right;
   z-index: 1;
+}
+.video-button {
+  position: fixed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: 5rem;
+  z-index: 1;
+  top: 2.6%;
+}
+.video-button .fa-play {
+  margin-left: 0.2rem;
 }
 .audio-button {
   position: sticky;
-  border-radius: 30px;
-  width: 50px;
-  height: 50px;
-  left: 2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: 3%;
   z-index: 1;
-  top: 13%;
+  top: 2.6%;
 }
 .audio-button .fa-play {
   margin-left: 0.2rem;
 }
 .Header p {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .switch input {
   opacity: 0;
@@ -481,7 +510,7 @@ input:checked + .slider:before {
 }
 .line-1 {
   position: relative;
-  top: 10%;
+  /* top: 10%; */
   width: 12em;
   margin: 0 auto;
   border-right: 2px solid rgba(25, 25, 25, 0.75);
@@ -578,10 +607,6 @@ input:checked + .slider:before {
   .git-head-div {
     width: 75%;
   }
-  .switch {
-    bottom: 48%;
-    left: 35%;
-  }
   .half form input,
   textarea {
     margin: 5px 0;
@@ -599,12 +624,10 @@ input:checked + .slider:before {
     display: none;
   }
   .see {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
+    padding: 5px;
+    font-size: 0.7rem;
+    flex-direction: column;
+    padding-top: 5px;
   }
   .fa-eye {
     font-size: 20px;
