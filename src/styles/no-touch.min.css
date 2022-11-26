@@ -285,6 +285,7 @@ button:focus {
   background-color: #fff;
 }
 .git-head-div {
+  margin-left: unset !important;
   box-sizing: border-box;
   padding-top: 5%;
   padding-bottom: 15px;
@@ -293,6 +294,17 @@ button:focus {
   color: #000;
   font-weight: 500;
   text-align: center;
+}
+.kawaii {
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.contact-header {
+  display: flex;
+  align-items: baseline;
+  width: 67%;
+  margin: auto;
 }
 .git-cont {
   display: inline-block;
@@ -567,6 +579,12 @@ input:checked + .slider:before {
   .line-1 {
     font-size: 90%;
     top: 0%;
+  }
+  .kawaii {
+    margin-right: 0px;
+  }
+  .contact-header {
+    width: 90%;
   }
   .underline {
     text-decoration-color: (0, 0, 0, 0.1);
