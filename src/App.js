@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import Particles from "./components/layouts/Particles";
 import Header from "./components/section/Header";
