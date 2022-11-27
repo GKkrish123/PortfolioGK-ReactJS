@@ -20,7 +20,7 @@ const background = {
 const section2title = "About Me";
 const about = {
   paragraph:
-  "A thriving software engineer who has an extensive experience in the design, analysis and testing of a web application, an enhanced understanding of the architecture and frameworks and an adulthood of writing easily maintainable and understandable code.",
+    "A thriving software engineer who has an extensive experience in the design, analysis and testing of a web application, an enhanced understanding of the architecture and frameworks and an adulthood of writing easily maintainable and understandable code.",
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
@@ -122,7 +122,8 @@ const miscellaneous = [
 // To get your own jotform link, go to https://formspree.io/
 // If you hacve the link already, paste it in the contactUrl below
 const section5Title = "Get in Touch";
-const formSheet = "https://v1.nocodeapi.com/gkkrish/google_sheets/mxNzVdMCfFFcVYMX?tabId=Sheet1";
+const formSheet =
+  "https://v1.nocodeapi.com/gkkrish/google_sheets/mxNzVdMCfFFcVYMX?tabId=Sheet1";
 const contact = {
   pitch:
     "Whether you want to get in touch, talk about a project, or just say hi, I would love to hear from you. You can submit the form or reach out through the below platforms :)",
@@ -135,7 +136,8 @@ const social = {
   github: "https://github.com/gkkrish123",
   instagram: "https://www.instagram.com/gkkrish_16/",
   linkedin: "https://linkedin.com/in/gokulakrishnan-a-2b09641b0",
-  resume: "https://drive.google.com/file/d/1E_NC_wQjmXxTUFEq-9k6hufzTgvAqwUp/view?usp=sharing",
+  resume:
+    "https://drive.google.com/file/d/1E_NC_wQjmXxTUFEq-9k6hufzTgvAqwUp/view?usp=sharing",
 };
 // Dont change anything here
 export {

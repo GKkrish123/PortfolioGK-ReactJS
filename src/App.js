@@ -8,7 +8,6 @@ import Contact from "./components/section/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { animation } from "./profile";
-import cornfieldChase from "./cornfieldChase.mp3";
 import myVideo from "./dopeEdit.mp4";
 import Nebula from "./components/layouts/Nebula";
 import DayNightToggle from "react-day-and-night-toggle";
@@ -78,25 +77,9 @@ const App = () => {
     }
   };
 
-  const [audio] = useState(new Audio(cornfieldChase));
-  const [MusicStartTrigger, setMusicStartTrigger] = useState("");
-  const [playing, setPlaying] = useState(false);
   const [videoPlaying, setVideoPlaying] = useState(false);
 
-  const toggle = () => setPlaying(!playing);
   const toggleVideo = () => setVideoPlaying(!videoPlaying);
-
-  useEffect(() => {
-    audio.addEventListener("ended", () => audio.play());
-  }, [audio]);
-
-  useEffect(() => {
-    MusicStartTrigger && setPlaying(true);
-  }, [MusicStartTrigger]);
-
-  useEffect(() => {
-    playing ? audio.play() : audio.pause();
-  }, [playing, audio]);
 
   useEffect(() => {
     AOS.init({
@@ -112,9 +95,6 @@ const App = () => {
       className="App"
       // onMouseMove={() => setMusicStartTrigger("Start")}
     >
-      <button className="audio-button" onClick={toggle}>
-        <i className={`${playing ? "fa fa-volume-up" : "fa fa-volume-mute"}`} />
-      </button>
       {showVideoButton && (
         <button className="video-button" onClick={toggleVideo}>
           <i

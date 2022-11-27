@@ -265,7 +265,7 @@ button:focus {
   margin-bottom: 15px;
 }
 .pp-head-line .fa-download {
-  font-size: x-large;
+  font-size: xx-large;
 }
 .pp-text {
   font-size: 1.5rem;
@@ -274,17 +274,14 @@ button:focus {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .git-form {
-  width: 1160px;
+  width: 100%;
   box-sizing: border-box;
-  display: block;
-  margin: 3rem 3rem 0 3rem;
   background-color: #fff;
 }
 .git-head-div {
@@ -340,7 +337,7 @@ button:focus {
 .contact-header {
   display: flex;
   align-items: baseline;
-  width: 67%;
+  width: 100%;
   margin: auto;
 }
 .git-cont {
@@ -448,11 +445,11 @@ textarea:focus {
 }
 .gtp {
   position: fixed;
-  left: 92%;
-  height: 150px;
-  top: 82%;
+  height: 9rem;
+  bottom: 0;
+  right: 0;
   z-index: 1002;
-  cursor: crosshair;
+  cursor: pointer;
 }
 .see {
   background-color: var(--primary-color);
@@ -499,7 +496,7 @@ textarea:focus {
   margin-left: 0.2rem;
 }
 .audio-button {
-  position: sticky;
+  position: fixed;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -554,6 +551,29 @@ input:checked + .slider:before {
 .slider.round {
   border-radius: 34px;
 }
+.space {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 5%;
+  border-radius: 50%;
+  z-index: 1;
+  rotate: 30deg;
+  filter: drop-shadow(4px 1px 13px black) saturate(1.5);
+  animation: spacerotation 2s infinite linear;
+}
+.space:hover {
+  cursor: pointer;
+  filter: drop-shadow(4px 1px 20px black) saturate(1.5);
+}
+@keyframes spacerotation {
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .slider.round:before {
   border-radius: 50%;
 }
@@ -607,6 +627,9 @@ input:checked + .slider:before {
   }
 }
 @media (max-width: 800px) {
+  .parallax {
+    margin-bottom: 5%;
+  }
   .lead {
     font-weight: 300;
   }
@@ -671,9 +694,7 @@ input:checked + .slider:before {
     display: none;
   }
   .gtp {
-    left: 80%;
-    top: 87%;
-    height: 75px;
+    height: 6rem;
   }
   .Copy {
     display: none;

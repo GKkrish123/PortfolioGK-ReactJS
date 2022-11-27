@@ -202,7 +202,13 @@ const Kawaii = ({ mood, focusedInput }) => {
               power={{ x: 5, y: 5 }}
               rotatable={false}
               target={focusedInput}
-              targetType={focusedInput ? "input" : "mouse"}
+              targetType={
+                focusedInput
+                  ? focusedInput === "#msg"
+                    ? "textarea"
+                    : "input"
+                  : "mouse"
+              }
             >
               <div className="eye-pupil" />
             </WatchingYou>
@@ -212,7 +218,13 @@ const Kawaii = ({ mood, focusedInput }) => {
               power={{ x: 5, y: 5 }}
               rotatable={false}
               target={focusedInput}
-              targetType={focusedInput ? "input" : "mouse"}
+              targetType={
+                focusedInput
+                  ? focusedInput === "#msg"
+                    ? "textarea"
+                    : "input"
+                  : "mouse"
+              }
             >
               <div className="eye-pupil" />
             </WatchingYou>

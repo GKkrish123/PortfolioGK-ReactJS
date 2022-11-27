@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './styles/style.css'
-import './styles/images.css'
-import './styles/no-touch.min.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./components/App/App";
+import "./styles/style.css";
+import "./styles/images.css";
+import "./styles/no-touch.min.css";
 
 ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById("root")
 );
