@@ -19,10 +19,14 @@ const Header = () => {
         <h3 className="line-1 anim-typewriter">FULL STACK DEVELOPER</h3>
         <HeaderButton />
         <img
+          id="to-space"
           className="space"
           src={space}
           alt="space"
-          onClick={() => history.push("/planets")}
+          onClick={() => {
+            document.getElementById("to-space").className = "to-space-move";
+            setTimeout(() => history.push("/planets"), 1000);
+          }}
         />
       </div>
       <img

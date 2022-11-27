@@ -81,6 +81,11 @@ button:focus {
   -webkit-filter: invert(1) hue-rotate(180deg);
   -moz-filter: invert(1) hue-rotate(180deg);
 }
+.dark-mode .wrapper-container {
+  filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  -moz-filter: invert(1) hue-rotate(180deg);
+}
 .inverse-dark {
   filter: invert(1) hue-rotate(180deg);
   -webkit-filter: invert(1) hue-rotate(180deg);
@@ -566,6 +571,69 @@ input:checked + .slider:before {
 .space:hover {
   cursor: pointer;
   filter: drop-shadow(4px 1px 20px black) saturate(1.5);
+}
+.space-earth {
+  width: 50px;
+  height: 50px px;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  border-radius: 50%;
+  z-index: 1;
+  rotate: -130deg;
+  filter: drop-shadow(4px 1px 13px purple) saturate(1.5);
+  animation: spacerotation 2s infinite linear;
+}
+.space-earth-move {
+  width: 50px;
+  height: 50px px;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  border-radius: 50%;
+  z-index: 1;
+  rotate: -130deg;
+  filter: drop-shadow(4px 1px 13px purple) saturate(1.5);
+  animation: move 1s linear;
+}
+.to-space-move {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 5%;
+  border-radius: 50%;
+  z-index: 1;
+  rotate: 60deg;
+  filter: drop-shadow(4px 1px 13px black) saturate(1.5);
+  animation: toSpacemove 1s linear;
+}
+@keyframes toSpacemove {
+  from {
+    bottom: 5%;
+    right: 45%;
+    opacity: 1;
+  }
+  to {
+    bottom: 60%;
+    right: 10%;
+    opacity: 0;
+  }
+}
+@keyframes move {
+  from {
+    top: 2%;
+    right: 5%;
+    opacity: 1;
+  }
+  to {
+    top: 40%;
+    right: 40%;
+    opacity: 0;
+  }
+}
+.space-earth:hover {
+  cursor: pointer;
+  filter: drop-shadow(4px 1px 20px purple) saturate(1.5);
 }
 @keyframes spacerotation {
   50% {
