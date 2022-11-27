@@ -48,7 +48,8 @@ const App = () => {
         localStorage.getItem("mode") !== "Light")
     ) {
       localStorage.setItem("mode", "Dark");
-      document.documentElement.classList.toggle("dark-mode");
+      !document.documentElement.classList.contains("dark-mode") &&
+        document.documentElement.classList.toggle("dark-mode");
       document.getElementById("not-dark").classList.toggle("inverse-dark");
       document.getElementById("not-dark2").classList.toggle("inverse-dark");
       var x = document.getElementsByClassName("img-pro");
