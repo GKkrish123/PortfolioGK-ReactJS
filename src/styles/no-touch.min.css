@@ -359,6 +359,7 @@ textarea {
 }
 .half form textarea {
   padding-bottom: 45px;
+  resize: none;
 }
 .half form input:focus,
 textarea:focus {
