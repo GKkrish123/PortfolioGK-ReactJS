@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import { Nav, Menu, Bars, List } from "./NavMobileStyles";
