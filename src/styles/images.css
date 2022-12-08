@@ -1,43 +1,42 @@
-
 /* Add your profile image here */
-.Photo{
-    background-image: url('https://images.pexels.com/photos/3799821/pexels-photo-3799821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+.Photo {
+  background-image: url("https://images.pexels.com/photos/3799821/pexels-photo-3799821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 /* Projects Photo */
-.project1{
-    background-image: url('https://blog.opsramp.com/hubfs/blog-infra-monitoring.png');
-    cursor: none;    
+.project1 {
+  background-image: url("https://blog.opsramp.com/hubfs/blog-infra-monitoring.png");
+  cursor: none;
 }
-.project2{
-    background-image: url('https://st2.depositphotos.com/4112611/9146/v/950/depositphotos_91462188-stock-illustration-doodle-cars-background-seamless-baby.jpg');
-    cursor: none;
+.project2 {
+  background-image: url("https://www.deccanherald.com/sites/dh/files/articleimages/2020/07/21/hdfc%202-1595334067.png");
+  cursor: none;
 }
-.project3{
-    background-image: url('https://previews.123rf.com/images/tashatuvango/tashatuvango1609/tashatuvango160900236/62092137-portfolio-multicolor-inscription-on-white-brick-wall-with-doodle-icons-around-portfolio-concept-mode.jpg');
-    cursor: none;
+.project3 {
+  background-image: url("https://www.uctoday.com/wp-content/uploads/2022/06/What-is-end-to-end-encryption.jpg");
+  cursor: none;
 }
-.project4{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+four');
-    cursor: none;
+.project4 {
+  background-image: url("https://i.pcmag.com/imagery/roundups/38133..v1594409362.jpg");
+  cursor: none;
 }
-.project5{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+five');
-    cursor: none;
+.project5 {
+  background-image: url("https://www.designnews.com/sites/designnews.com/files/Most%20American%20Cars%20collage.jpg");
+  cursor: none;
 }
-.project6{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+six');
-    cursor: none;
+.project6 {
+  background-image: url("https://t3.ftcdn.net/jpg/02/49/05/82/360_F_249058233_0MIaTy9WXtKHF0eacUSg9c3hkV9ehIbX.jpg");
+  cursor: none;
 }
 /* Miscelaneous Activities photo */
-.misc1{
-    background-image: url('https://m.media-amazon.com/images/I/81zLbpYjz5L._AC_SY450_.jpg');
-    cursor: none;
+.misc1 {
+  background-image: url("https://m.media-amazon.com/images/I/81zLbpYjz5L._AC_SY450_.jpg");
+  cursor: none;
 }
-.misc2{
-    background-image: url('https://img.freepik.com/free-vector/technology-doodle-drawing-collection-hand-drawn-doodle-illustrations-cartoon-style_40453-2167.jpg?size=500&ext=jpg');
-    cursor: none;
+.misc2 {
+  background-image: url("https://img.freepik.com/free-vector/technology-doodle-drawing-collection-hand-drawn-doodle-illustrations-cartoon-style_40453-2167.jpg?size=500&ext=jpg");
+  cursor: none;
 }
-.misc3{
-    background-image: url('http://lofrev.net/wp-content/photos/2014/09/Car-logo.jpg');
-    cursor: none;
+.misc3 {
+  background-image: url("http://lofrev.net/wp-content/photos/2014/09/Car-logo.jpg");
+  cursor: none;
 }
