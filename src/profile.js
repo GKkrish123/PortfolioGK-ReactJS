@@ -137,7 +137,7 @@ const social = {
   instagram: "https://www.instagram.com/gkkrish_16/",
   linkedin: "https://linkedin.com/in/gokulakrishnan-a-2b09641b0",
   resume:
-    "https://drive.google.com/file/d/141s0FSYfJizN0ShW7xZhLBC9F6oym9d2/view?usp=share_link",
+    "https://drive.google.com/file/d/13jS52t8ltYIEgut51p-cXNHVNOt-vaVw/view?usp=share_link",
 };
 // Dont change anything here
 export {
